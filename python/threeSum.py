@@ -16,6 +16,8 @@ def threeSum(nums):
                 res.add(tuple((nums[i],nums[left],nums[right])))
                 left += 1
                 right -= 1
+                if nums[left+1] == nums[left]: left+=1
+                if nums[right-1] == nums[right]: right+=1
     return res
 
 def main():
