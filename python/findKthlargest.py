@@ -18,7 +18,7 @@ def partition(list,left,right):
     for i in list:
         if list[i] < pivot_value:
             list[i], list[store_index] = list[store_index], list[i]
-            store_index +=1
+            store_index += 1 
     list[store_index], list[right] = list[right],list[store_index]
     return store_index
 
