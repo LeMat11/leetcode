@@ -1,5 +1,7 @@
 from ListNode import ListNode
 def reverseBetween(head:ListNode,left,right):
+    if not head:
+        return head
     count = int(1)
     curr = head
     pre = None
@@ -43,7 +45,7 @@ def print_linked_list(head):
 
 if __name__ == "__main__":
     # arr = [1,2,3,7,4,5,6]
-    arr = [3,5]
+    arr = [5,3]
     head = create_linked_list(arr)
     solution = reverseBetween(head,1,2)
     print_linked_list(solution)
